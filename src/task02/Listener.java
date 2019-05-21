@@ -27,6 +27,7 @@ public class Listener extends Thread {
                 System.out.println("Введите сообщение: ");
                 BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
                 sentence = inFromUser.readLine();
+
                 byte[] sendData = new byte[1024];
                 sendData = sentence.getBytes();
                 InetAddress IPAddress = InetAddress.getByName("127.0.0.1");
